@@ -1,0 +1,29 @@
+
+
+public class Customer 
+{
+	private int customerId;
+	private String customerName;
+	private String customerAddress;
+	private Order Order;
+	
+	public Customer(int customerId, String customerName, String customerAddress, Order order)
+	{
+		super();
+		this.customerId = customerId;
+		this.customerName = customerName;
+		this.customerAddress = customerAddress;
+		Order = order;
+	}
+
+	@Override
+	public String toString() 
+	{
+		return "Customer \n customerId=" + customerId + ",\n customerName=" + customerName + ",\n customerAddress="+ customerAddress + ",\n Order=" + Order ;
+	}
+	
+	
+	
+	
+
+}
